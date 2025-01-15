@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Photosnap from "../../atoms/Photosnap/Photosnap";
 
 const Card = ({
@@ -64,18 +63,6 @@ const Card = ({
       </div>
     </div>
   );
-};
-
-Card.propTypes = {
-  logo: PropTypes.string.isRequired,
-  company: PropTypes.string.isRequired,
-  isNew: PropTypes.bool,
-  isFeatured: PropTypes.bool,
-  job: PropTypes.string.isRequired,
-  post: PropTypes.string.isRequired,
-  jobType: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Card;
