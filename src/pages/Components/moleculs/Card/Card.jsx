@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Photosnap from "../../atoms/Photosnap/Photosnap";
 
 const Card = ({
@@ -50,18 +51,31 @@ const Card = ({
         </div>
 
         <div className="flex gap-x-[16px]">
-          {tags.length > 0 && tags.map((tag, index) => (
-            <p
-              className="bg-[#5CA5A5] font-bold leading-[24px] tracking-[-0.123px] text-[#5CA5A5] pt-[5px] pr-[10px] pb-[3px] pl-[9px] rounded-[4px] bg-opacity-10"
-              key={index}
-            >
-              {tag}
-            </p>
-          ))}
+          {tags.length > 0 &&
+            tags.map((tag, index) => (
+              <p
+                className="bg-[#5CA5A5] font-bold leading-[24px] tracking-[-0.123px] text-[#5CA5A5] pt-[5px] pr-[10px] pb-[3px] pl-[9px] rounded-[4px] bg-opacity-10"
+                key={index}
+              >
+                {tag}
+              </p>
+            ))}
         </div>
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  logo: PropTypes.string.isRequired,
+  company: PropTypes.string.isRequired,
+  isNew: PropTypes.bool,
+  isFeatured: PropTypes.bool,
+  job: PropTypes.string.isRequired,
+  post: PropTypes.string.isRequired,
+  jobType: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Card;
