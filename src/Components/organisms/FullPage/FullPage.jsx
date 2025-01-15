@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../../moleculs/Card/Card";
+import Card from "@/Components/moleculs/Card/Card";
 
 const FullPage = () => {
   const data = [
