@@ -1,5 +1,5 @@
 import React from "react";
-import FullPage from "./Components/organisms/FullPage/FullPage";
+import FullPage from "@/Components/organisms/FullPage/FullPage";
 
 const index = () => {
   return (

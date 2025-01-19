@@ -1,9 +1,5 @@
 import React from "react";
-<<<<<<< HEAD:src/Components/moleculs/Card/Card.jsx
 import Photosnap from "@/Components/atoms/Photosnap/Photosnap";
-=======
-import Photosnap from "../../atoms/Photosnap/Photosnap";
->>>>>>> a2a7fb7ffe6c98c68ebc52e8c98acc51e20dc163:src/pages/Components/moleculs/Card/Card.jsx
 
 const Card = ({
   logo,
