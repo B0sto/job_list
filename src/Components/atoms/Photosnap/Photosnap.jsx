@@ -9,4 +9,5 @@ const Photosnap = ({src, altText }) => {
   )
 }
 
+
 export default Photosnap
